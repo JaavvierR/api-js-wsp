@@ -1,0 +1,17 @@
+{
+    "bienvenida": "✨ ¡Bienvenido al Asistente de Ventas! ✨\n🛍️ Estoy aquí para ayudarte a encontrar los mejores productos.",
+    "menu": [
+      "1️⃣ Consultar productos",
+      "2️⃣ Ofertas especiales",
+      "3️⃣ Información de envíos",
+      "4️⃣ Otros (realizar pregunta personalizada)",
+      "5️⃣ Salir"
+    ],
+    "despedida": "\n🤖 Asistente: ¡Gracias por tu consulta! 😊 Que tengas un día increíble. 🌟",
+    "respuestas": {
+      "1": "Disponemos de las siguientes categorías de productos:\n- Electrónica (smartphones, laptops, tablets)\n- Hogar (muebles, decoración, electrodomésticos)\n- Ropa (hombre, mujer, niños)\n- Deportes (ropa deportiva, equipamiento)\nPara ver productos específicos, selecciona la opción 4 y especifica lo que buscas.",
+      "2": "¡Tenemos estas ofertas imperdibles!\n- 30% de descuento en todos los productos electrónicos\n- 2x1 en artículos para el hogar\n- Envío gratis en compras superiores a $50\n- Descuentos adicionales pagando con nuestra tarjeta",
+      "3": "Información sobre nuestros envíos:\n- Envío estándar: 3-5 días hábiles\n- Envío express: 1-2 días hábiles (costo adicional)\n- Envío gratis en compras mayores a $50\n- Seguimiento de pedidos disponible las 24 horas\nPara consultar el estado de un envío específico, selecciona la opción 4.",
+      "error": "\n⚠️ Por favor, selecciona una opción válida (1-5)."
+    }
+  }
