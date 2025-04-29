@@ -20,7 +20,7 @@ exports.getChat = async (req, res) => {
           "3": "Información sobre nuestros envíos:\n- Envío estándar: 3-5 días hábiles\n- Envío express: 1-2 días hábiles con un costo adicional",
         },
         despedida: "🤖 Asistente: ¡Gracias por tu consulta! 😊 Que tengas un día increíble.",
-        error: "⚠️ Por favor, selecciona una opción válida (1-5)."
+        error: "⚠️ Por favor, selecciona una opción válida  (1-5)."
       });
 
       await chatData.save();
