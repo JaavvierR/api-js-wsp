@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: whatsapp-bot-api
+    restart: unless-stopped
+    ports:
+      - "${PORT:-5001}:5001"
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-deepseek-r1:1.5b}
+      - EMBEDDING_MODEL=${EMBEDDING_MODEL:-nomic-embed-text}
+      - PORT=${PORT:-5001}
+      - NODE_ENV=production
+    volumes:
+      - ./catalogo_.pdf:/app/catalogo_.pdf
+      - ./chat.json:/app/chat.json
+      - ./product.json:/app/product.json
+    depends_on:
+      - ollama
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama-service
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    deploy:
+      resources:
+        limits:
+          memory: 8G
+
+volumes:
+  ollama_data:

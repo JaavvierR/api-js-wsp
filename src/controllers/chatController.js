@@ -24,7 +24,7 @@ exports.getChat = async (req, res) => {
       });
 
       await chatData.save();
-    }
+    } 
 
     res.json(chatData);
   } catch (error) {
